@@ -13,7 +13,7 @@ import getopt, sys
 if __name__ == '__main__':
 	base = base()
 	try:
-		opts, args = getopt.getopt(sys.argv[1:], 'vhi:p:t:s:', ['version', 'help', 'ips=', 'port=', 'thread=', 'save='])
+		opts, args = getopt.getopt(sys.argv[1:], 'vhi:p:t:s:f:', ['version', 'help', 'ips=', 'port=', 'thread=', 'save=', 'file='])
 		base.run(opts)
 	except Exception,e:
-		base.usage()
+		print e

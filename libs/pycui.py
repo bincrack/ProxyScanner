@@ -7,6 +7,7 @@
 	@author		Holger
 	@version	1.0
 '''
+import sys
 from os import name
 
 class color:
@@ -28,9 +29,10 @@ class color:
 			def p(m, c = self.BLACK, e = True):
 				s(c | c | c)
 				if e:
-					print m
+					sys.stdout.write("%s\n" % m)
 				else:
-					print m,
+					sys.stdout.write("%s\n" % m)
+				sys.stdout.flush()
 				s(self.RED | self.GREEN | self.BLUE)
 		else:
 			# Other system(unix)
