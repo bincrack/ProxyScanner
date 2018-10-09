@@ -28,7 +28,7 @@ class Num:
 
 class base:
 	def __init__(self):
-		self._p = [8080]
+		self._p = [80,8080,3128]
 		self._t = 10
 		self._i = []
 		self._ip = []
@@ -173,8 +173,9 @@ class base:
 		cor.p('Args: ', cor.PURPLE)
 		cor.p('\t-v --version\t\tPS version')
 		cor.p('\t-h --help\t\tHelp menu')
+		cor.p('\t-f --file\t\tIPS: ip.txt')
 		cor.p('\t-i --ips\t\tIPS: 192.168.1.1-192.168.1.100')
-		cor.p('\t-p --port\t\tProxy port (default:8080)')
+		cor.p('\t-p --port\t\tProxy port (default:80,8080,3128)')
 		cor.p('\t-t --thread\t\tScan thread (default:10)')
 		cor.p('\t-s --save\t\tSave scan result')
 		exit(0)
